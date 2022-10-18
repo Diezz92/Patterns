@@ -1,14 +1,10 @@
 package ru.netology.delivery.test;
 
-import com.github.javafaker.Faker;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Keys;
 import ru.netology.delivery.data.DataGenerator;
-
-import java.util.Locale;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.withText;
@@ -16,12 +12,6 @@ import static com.codeborne.selenide.Selenide.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class DeliveryTest {
-    private static Faker faker;
-
-    @BeforeAll
-    static void setupAll() {
-        faker = new Faker(new Locale("ru"));
-    }
 
     @BeforeEach
     void setup() {
